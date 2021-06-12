@@ -4,12 +4,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE-=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Video</title>
+        <title>Tarea</title>
     </head>
     <body>
         <section class="sec">
             <div style="text-align:center;" >
-            <video src="conten/video/humo.mp4" autoplay muted> </video></div>
+            <video src="conten/video/humo.mp4" autoplay muted loop > </video></div>
             <h1>
                 <span>I</span>
                 <span>N</span>
@@ -23,6 +23,51 @@
                 <span>S</span>
 
             </h1>
+        
+        <section class= banner id="sec">
+            <h2>Hola mundo, proyecto Oscar</h2>
+            <header>
+              
+                <a href="#" class="logo">logo</a>
+                <div id="toggle" onclick="toggle()"></div>
+            </header>
+            <div class="content">
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Odio qui adipisci esse sed quaerat optio, suscipit atque 
+                    numquam repudiandae facere delectus pariatur necessitatibus 
+                    perspiciatis unde praesentium sit voluptatem doloremque. Magnam?</h2>
+
+            </div>
+            <ul class="redes">
+                <li><a href="#"><img src="../Demo Landing/content/images/facebook.png" alt="icono red social"> </a></li>
+                <li><a href="#"><img src="../Demo Landing/content/images/twitter.png" alt="icono red social"> </a></li>
+                <li><a href="#"><img src="../Demo Landing/content/images/whatssap.png" alt="icono red social"> </a></li>
+            </ul>
         </section>
+     </section>
+     
+        <nav id= "navigation">
+            <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de mi</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contacto</a></li>
+           
+            </ul>
+        </nav>
+
+
+        <script type="text/javascript">
+        function toggle(){
+            var seccion = document.getElementById("sec")
+            var nav = document.getElementById("navigation")
+            seccion.classList.toggle('active')
+            nav.classList.toggle('active')
+
+         
+            }
+        
+        </script>
     </body>
 </html>
